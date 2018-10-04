@@ -1,0 +1,245 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #005f32;
+	background: #005f32;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #333;
+}
+
+/* Header Style */
+.container > header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+	background: rgba(0,0,0,0.01);
+}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+	margin-top: 50px;
+
+
+}
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+
+.codrops-icon-next:before {
+	content: "\e000";
+}
+
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 1em;
+	font-size: 0.9em;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	border: 3px solid #005f32;
+	color: #005f32;
+	font-weight: 700;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	border-color: #2c3f52;
+	color: #2c3f52;
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+/*
+  Common styles to all themes
+  Please to customice the design create a custom 'theme' below
+*/
+
+
+.pure-css-select-style {
+	width: 60%;
+	overflow: hidden;
+	margin-top: -5px;
+	margin-left: -4px;
+	
+  }
+  .pure-css-select-style select {
+	width: 100%;
+	padding-right: 40px;
+	background-image: block;
+	-webkit-appearance: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #014525 url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2011%2011%22%3E%3Cpath%20d%3D%22M4.33%208.5L0%201L8.66%201z%22%20fill%3D%22%23ffffff%22%2F%3E%3C%2Fsvg%3E') right 15px center no-repeat;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+
+	
+	/* Hide arrow on FF */
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	}
+	
+	.pure-css-select-style select:focus{
+		box-shadow: 0 0 0 0;
+		border: 0 none;
+		outline: 0;
+	} 
+
+  /* Hide arrow on IE10*/
+  .pure-css-select-style select::-ms-expand {
+	display: none;
+  }
+  .pure-css-select-style optgroup {
+	color: inherit;
+	font: inherit;
+	}
+	
+	  /* Square ------------------------------------------------------------------- */
+
+		.theme-square select {
+			padding: 5px 38px 5px 5px;
+			/* You can style text of the active select option */
+			color: #fff;
+			font-weight: bold;
+			display: block;
+			font-size: 1.17em;
+			font-family: 'Lato', Calibri, Arial, sans-serif;
+			}
+		
+			
+  /* IE9: To hide select arrow we make the select overflow on the right side there is not another way :( */
+  @media screen and (min-width:0\0) {
+	.pure-css-select-style select {
+	  width: calc( 100% + 58px );
+	}
+  }
+  
+@media (max-width: 766px){
+.no-touch .cs-style-3 figure figcaption, .cs-style-3 figure figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+figure img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+	transform: translateY(-50px);
+	
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.pure-css-select-style {
+	width: 75%;
+  }
+
+
+}
+	
